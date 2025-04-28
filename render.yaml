@@ -1,0 +1,6 @@
+services:
+  - type: static
+    name: podc-chatbot-frontend
+    buildCommand: echo "No build step needed"
+    staticPublishPath: .
+    branch: main
