@@ -18,15 +18,13 @@ CORS(app, resources={
     r"/chat": {
         "origins": [
             "http://localhost:5000",
-            "http://127.0.0.1:5000",
-            "https://podc-chatbot-frontend-test.onrender.com",
+            "https://podc-chatbot-frontend.onrender.com",
             "https://*.onrender.com"
         ],
         "methods": ["POST"],
         "allow_headers": ["Content-Type"]
     }
 })
-
 # Set up OpenAI client using the key from environment
 api_key = os.getenv("OPENAI_API_KEY")
 if not api_key:

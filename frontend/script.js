@@ -27,7 +27,7 @@ function sendMessage(){
     appendMessage('user', text);
     input.value='';
 
-    fetch('https://podc-chatbot-1-0-0-test.onrender.com/chat', {  // Added /chat endpoint
+    fetch('https://podc-chatbot-backend.onrender.com/chat', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
