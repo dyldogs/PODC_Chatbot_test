@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: podc-chatbot-backend
+    name: podc-chatbot-backend-test1
     runtime: python
     buildCommand: cd backend && pip install -r requirements.txt
     startCommand: cd backend && gunicorn server:app
@@ -11,7 +11,7 @@ services:
         sync: false
 
   - type: static
-    name: podc-chatbot-frontend
+    name: podc-chatbot-frontend-test1
     buildCommand: echo "No build step needed"
     staticPublishPath: frontend
     routes:
